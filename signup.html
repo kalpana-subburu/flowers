@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Page</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<center>
+<body>
+  <div class="box">
+    <h2>Sign Up</h2>
+    <form onsubmit="goToLogin(); return false;">
+      <label>Username:</label>
+      <input type="text" required>
+      <label>Email:</label>
+      <input type="email" required>
+      <label>Password:</label>
+      <input type="password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="link">
+      Already have an account? <a href="login.html">Login</a>
+    </div>
+  </div>
+  <script>
+    function goToLogin() {
+      window.location.href = "login.html";
+    }
+  </script>
+  </center>
+</body>
+</html>

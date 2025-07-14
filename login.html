@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+   <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="box">
+    <h2>Login</h2>
+    <form onsubmit="goToIndex(); return false;">
+      <label>Username:</label>
+      <input type="text" required>
+      <label>Password:</label>
+      <input type="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div class="link">
+      Don't have an account? <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+  <script>
+    function goToIndex() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
